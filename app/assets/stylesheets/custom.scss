@@ -49,7 +49,7 @@ h1, h2 {
 .users-new-wrapper{
   width: 100vw;
   height: 100vh;
-  background-image: image-url('bg-top.jpg');
+  background: image-url('bg-top.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -63,4 +63,11 @@ h1, h2 {
       margin-bottom: 20px;
     }
   }
+}
+
+.alert{
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100px;
+  z-index: 10000;
 }
