@@ -42,11 +42,11 @@ h1, h2 {
   }
 }
 
-.form-control{
+.form-control {
   height: 45px;
 }
 
-.users-new-wrapper{
+.users-new-wrapper {
   width: 100vw;
   height: 100vh;
   background: image-url('bg-top.jpg');
@@ -56,18 +56,35 @@ h1, h2 {
   background-size: cover;
   background-color: #464646;
 
-  .users-new-container{
+  .users-new-container {
     padding-top: 220px;
 
-    .form-group{
+    .form-group {
       margin-bottom: 20px;
     }
   }
 }
 
-.alert{
+.alert {
   margin-bottom: 0px;
   position: fixed;
   width: 100px;
   z-index: 10000;
+}
+
+.navbar-transparent {
+  margin-bottom: 0px;
+  background-color: rgba(0,0,0,0.5);
+  a {
+    color: #fff !important;
+  }
+
+  .navbar-brand {
+    padding: 0px;
+    margin-top: 15px;
+  }
+
+  img {
+    height: 40px;
+  }
 }
