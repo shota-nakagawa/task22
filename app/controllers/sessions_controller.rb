@@ -1,5 +1,4 @@
 class SessionsController < ApplicationController
-  before_action :login_check, only: [:new, :edit, :update, :destroy]
   def new
   end
 
@@ -20,7 +19,8 @@ class SessionsController < ApplicationController
    end
 
    private
-   def logged_in?
+   def login_check 
+     unless logged_in?
        flash[:alert] = "ログインしてください"
        redirect_to root_path
      end
