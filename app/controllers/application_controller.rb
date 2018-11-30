@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  before_action :login_check, only:[:new, :edit, :update, :destroy]
+  before_action :logged_in?, only:[:new, :edit, :update, :destroy]
   protect_from_forgery with: :exception
   add_flash_types :success, :info, :warning, :danger
 
