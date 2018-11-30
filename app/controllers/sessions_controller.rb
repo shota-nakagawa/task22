@@ -23,7 +23,6 @@ class SessionsController < ApplicationController
        flash[:alert] = "ログインしてください"
        redirect_to root_path
      end
-   end
 
     def log_in(user)
      session[:user_id] = user.id
